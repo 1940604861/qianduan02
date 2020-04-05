@@ -1,0 +1,96 @@
+4:
+(1).siblings("")  里面没有参数的话点击那个没有效果 其他有效果   里面有参数效果不一样
+
+    .netx()   它里面有参数（""）效果就是当前   如果没有表示他后一位元素有效果  alert($('p').next().html())
+
+5：
+（1）addClass() 方法向被选元素添加一个或多个类名。
+该方法不会移除已存在的 class 属性，仅仅添加一个或多个类名到 class 属性。
+
+
+6：
+（1）当输入域失去焦点  blur  时改变其颜色
+（2）当元素获得焦点时，发生  focus  事件
+（3）children 属性返回元素的子元素的集合
+
+
+8 9：
+（1）slideToggle() 
+方法在被选元素上进行 slideUp() 和 slideDown() 之间的切换。
+该方法检查被选元素的可见状态。如果一个元素是隐藏的，
+slideUp 上滑  slideDown 下滑
+
+（2）toggleClass()  方法对添加和移除被选元素的一个或多个类进行切换。
+//这个元素跟addclass差不多就是多了一个移除功能
+
+11 12：
+（1）filter() 筛选元素
+（2）:contains  筛选文字      //例子$('.conter ul li').filter(":contains('网页布局'),:contains('PHP视频教')")
+
+（3）if(hdw.is(':visible'))判断是不是显示   :visible 当前是不是可见的元素
+
+（4）text() 方法方法返回被选元素的文本内覆盖它。
+（5）fast 快速生成   //.show('fast')
+
+13 14：
+（1）append() 方法在被选元素的结尾（仍然在内部）插入指定内容。
+（2）pageX() 属性是鼠标指针的位置X轴
+（3）pageY() 属性是鼠标指针的位置Y轴
+（4）remove() 方法移除被选元素，包括所有文本和子节点
+
+15 16：
+（1）:animated      //例子is(":animated")    返回bool值，表示对象是否动画元素
+
+（2）animate()       方法执行 CSS 属性集的自定义动画。《提示：请使用 "+=" 或 "-=" 来创建相对动画。》
+
+（3）find()      方法返回被选元素的后代元素。  可以理解就是改变他本身
+（4）ceil()       方法可对一个数进行上舍入。//例子Math.ceil(1.4)   结果是2
+
+（5）parents()        方法返回被选元素的所有祖先元素。祖先是：老爸、爷爷、曾爷爷，依此类推。
+
+17：
+< css
+（1）legend 元素为 fieldset 元素定义标题（caption 表格标题）。
+（2）<fieldset> 标签将表单内容的一部分打包，生成一组相关表单的字段。
+（3）vertical-align 属性设置一个元素的垂直对齐方式
+（4）<label> label 元素不会向用户呈现任何特殊效果。标签的 for 属性应当与相关元素的 id 属性相同。
+>
+（4）defaultValue 属性可设置或返回文本框默认值
+（5）focus  添加函数到 focus 事件。当 <input> 字段获得焦点时发生 focus 事件
+（6） blur   添加函数到 blur 事件。当 <input> 字段失去焦点时发生 blur 事件
+
+18：
+（1）attr()  本身的效果使用后变成他括号里面的效果
+
+19：
+（1）.each(function(){       }) 遍历所有的 
+       例子  $('[name=checkboxx]:checkbox').each(function() {}）遍历所有的 复选框
+
+
+21 22：
+（1）parent("") 该方法父元素受影响。
+       //$('li').parent().css({"color":"red","border":"2px solid red"}) 效果在ul实现
+
+
+23 24：
+（1）<thead> 元素应该与 <tbody> 和 <tfoot> 元素结合起来使用，
+        用来规定表格的各个部分（表头、主体、页脚）。
+（2）$('tbody>tr')应该是返回tbody下面tr的个数
+（3）hasClass("") 方法检查被选元素是否包含指定的 class  判断选择的元素是不是有这个元素
+
+
+25：
+（1）appendTo("") 方法在被选元素的尾部插入 HTML 元素。
+（2）click 单击   ablclick双击;
+
+26：
+fadeIn(1000).delay(1000).fadeOut(1000)
+fadeIn() 方法逐渐改变被选元素的不透明度，从隐藏到可见
+fadeOut() 方法逐渐改变被选元素的不透明度，从可见到隐藏（褪色效果）。
+delay() 方法对队列中的下一项的执行设置延迟。
+
+27：
+hasClass() 方法检查被选元素是否包含指定的类名称。
+
+
+

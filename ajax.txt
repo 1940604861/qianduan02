@@ -1,0 +1,18 @@
+1、创建对象
+var xhr=new XMLHttpRequest;
+2、设置请求行
+xhr.open('get','getdate.php');
+3、请求头（get属性可以省略，post不发送数据也可以省略）
+xhr.setRequestHeader（'随便','随便'）
+3.5、注册会调函数
+xhr.onload=function(){
+     console.log（xhr.responseText）//responseText响应文本
+}
+4、请求发送主体（get请求为空，或者null.post请求数据写在这里，如果没有，直接为空或者写成null数据）
+xhr.send(null)；
+
+5、 querySelector() 方法返回文档中匹配指定 CSS 选择器的一个元素。
+注意： querySelector() 方法仅仅返回匹配指定选择器的第一个元素。
+如果你需要返回所有的元素，请使用 querySelectorAll() 方法替代。
+
+6、后台数据没有设置header（）  就在jquery设置dataType:'JSON'

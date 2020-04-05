@@ -1,0 +1,9 @@
+1：
+cursor:not-allowed   //是一个红色的圈加一个斜杠，表示禁止的意思
+
+！important  权重
+
+  display: flex;
+    justify-content:space-between;
+
+在一个盒子就不用浮动左右 直接帮你浮动左跟右

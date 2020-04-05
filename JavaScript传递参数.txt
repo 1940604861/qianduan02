@@ -1,0 +1,10 @@
+<div onclick="jump(0)">百度</div>
+<div onclick="jump(1)">新浪</div>
+<div onclick="jump(2)">谷歌</div>
+<script>
+function jump(num)
+{
+if(num==0) alert('百度');
+elseif(num==1) alert('新浪');
+elseif(num==2) alert('谷歌');
+}

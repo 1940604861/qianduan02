@@ -1,0 +1,30 @@
+生命周期三个阶段 初始化阶段 更新 死亡
+
+beforeCreate（）{}      准备工作之前（1次）
+
+created(){}                   准备工作之后（1次）
+
+beforemount(){}}         初始化显示之前立即调用（1次）
+
+mounted（）{}            初始化显示之后立即调用（1次）
+
+beforeUpdate(){}         发生变化之前(n次)   更新
+
+updated(){}                 发生变化之后 （n次）  更新
+
+beforeDestroy（）{}       死亡之前调用（1次）
+
+destroyed                      死亡之后
+
+
+
+mounted（）：发送ajax请求 启动定时器等异步任务
+
+beforeDestory():做收尾工作 比如：清除定时器
+
+
+mvvm：
+model  ：模型 数据对象（data）
+view:       视图 模型页面
+
+viewmodel 视图模型（vue的实例）

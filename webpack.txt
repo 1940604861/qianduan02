@@ -1,0 +1,11 @@
+cls清除代码记录
+
+1：npm init -y
+2:npm i jquery -s
+3:创建webpack.config.js文件 在里面写配置
+4：npm i webpack-dev-server -D  命令是安装到项目的本地开发
+5:new i webpack -D     注意webpack-dev-server这个工具，如果想要正常使用要求在本地项目中必须安装webpack  
+6:然后再输入安装的指令 npm i -D webpack-cli
+7：想要在内存中生成bundle.js文件 不想在inde.html页面中引用就安装
+npm i html-webpack-plugin -D
+8:npm install bootstrap@3 -D

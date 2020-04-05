@@ -1,0 +1,107 @@
+==等于
+！=不等于
+this.flag=!this.flag
+1：v-bind:是一个绑定属性指令  缩写：
+2：v-html=“msg”    如果mes：‘<h1>123</h1>’里面有html元素只有这个标签才能显示h1元素 其他的当做字符串显示
+3：v-text=“msg”
+4：<p v-cloak>  {{msg}}</p>
+5：v-on:  事件绑定  缩写@
+6:methods:{  }  这个methods属性中定义了当前vue实例所有可用的方法
+
+7：v-on下的事件
+v-on:click.stop=“” 阻止冒泡        放在子元素上
+v-on:click.prevent=“”阻止默认事件
+v-on:click.capture=""捕获触发事件
+v-on:click.self=""跟stop没区别就是放的位置有差距这个放在父元素上
+v-on:click.once=""  点击触发事件只能执行一次
+8：v-model=“” 双向绑定 但只能用在表单元素里
+9：eval（）   eval() 函数将执行表达式。
+
+10：v-for=“item in xxxx”英文意思是循环每一项  
+<h2 v-for="item in list">{{item}}</h2>
+ data:{ list:[1,2,3,4,5] }
+
+11：
+push（） 方法可向数组的末尾添加一个或多个元素，
+unshift() 方法可向数组的开头添加一个或更多元素
+12:v-if=""    的特点、每次都会重新删除或创建元素
+13:v-shou=""   的特点、每次不会重新进行DOM的创建删除操作，
+只会切换元素的display：none样式
+
+14：
+splice() 方法用于添加或删除数组中的元素。
+
+some() 方法会依次执行数组的每个元素：
+如果有一个元素满足条件，则表达式返回true , 剩余的元素不会再执行检测。
+如果没有满足条件的元素，则返回false
+
+search() 方法用于检索字符串中指定的子字符串，
+或检索与正则表达式相匹配的子字符串。
+如果没有找到任何匹配的子串，则返回 -1。
+
+vue.filter('str'function(){ })   过滤器
+
+replace(‘’，‘’) 方法用于在字符串中用一些字符替换另一些字符，
+或替换一个与正则表达式匹配的子串。
+
+v-focus  获取焦点        Vue.directive('focus',{
+            inserted:function(el){
+            el.focus()
+            }
+        })
+
+
+15：<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+
+16：
+ Vue.http.options.root = 'http://www.liulongbin.top:3005';
+    Vue.http.options.emulateJSON=true;
+
+17：props:['']
+ 
+18：<router-view></router-view>  认为是一个占位符
+<router-link to="" ></router-link>  默认渲染为一个 a 标签
+<router-link  to=""  tag="span"></router-link> 改变元素把a标签改为span
+routes:[
+    {path:'/',redirect:'/logins'}
+]
+默认用这个logins
+
+19:var routerobj=new VueRouter({
+    routes:[
+
+        {path:'/',redirect:'/logins'},
+        {path:'/logins',component:login},
+        {path:'/registers',component:register}
+    ],
+    linkActiveClass:"myctive"
+})     // 这个 linkActiveClass:"myctive"是改变类元素
+
+20：created(){  }  组件的生命周期钩子函数
+
+21：children:[  
+    {path:'logins',component:'login}，
+    {path:'registers',component:register''}
+]
+
+22：computed：{   } 在computed中，可以定义一些属性，这些属性，叫做计算机属性
+计算机属性本质，就是一个方法，只不过，我们使用这些计算机属性的时候，是把他们的名称
+直接当做属性来使用，并不会把计算机属性当做方法使用
+
+23： render: c => c(login)   //render会把el指定的容器中所有
+内容清空覆盖所以不要把 router-view和router-link直接写到el所控制的元素中
+<style lang="scss" scoped>   </style>
+//样式有scss或less 需要设置lang属性
+只要咋们style标签 是在.vue 组件中那么推荐都为 style 开启 scoped属性
+
+24：this.$route.params.id  //获取 id 挂载到url上
+
+25：this.commemts=this.comments.concat(result.body.message)
+为了防止 新的数据被老数据覆盖 我们加载更多的时候会获取新数据，应该调用 数组的cancat（） 方法拼接
+
+26：trim() 方法用于删除字符串的头尾空格。
+if(this.msg.trim().length===0)
+
+27：unshift() 方法可向数组的开头添加一个或更多元素
+var cmt={user_name:"匿名用户",add_time:"Data.now()",content:this.msg.trim()};
+this.msg.unshift(cmt)

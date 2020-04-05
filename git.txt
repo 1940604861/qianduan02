@@ -1,0 +1,52 @@
+1.git init
+
+2.git config --global user.name "wkw"  
+创建名字必须
+
+3.git config --global user.email 992722406@qq.com
+
+4. 1-1:git add ./reade.md       多目录可以这样=>  git add ./
+提交路径
+
+5.1-2:git commit -m "这个地方是写注释的" 
+提交到大门
+
+6.git commit --all -m "一次性的操作" 
+太多文件
+
+7.git log
+查看提交历史记录
+
+8.git log --oneline
+可以看到简洁的日志
+
+9.git reset --hard head~0     
+head~0 ， 0 表示退回的步数是上一次代码 ，如果1表示退回上上次保存的代码
+  
+10.git reset --hard head~ece9f38 
+如果更行的几百条用数字返回容易出错 所以最好用版本号返回
+
+11.git reflog
+看到以前切换的版本号 就是返回的历史
+
+12.git branch dev 
+创建了一个dev的分支
+
+git checkout dev 
+切换到指定的分支   这里是切换到命名为dev的分支
+
+git branch
+查看当前有多少分支 历史记录的意思
+
+git merge dev 
+合拼分支内容 
+
+
+13.git push https://github.com/1940604861/test01.git/ master
+提交到github网站上去 
+
+14.git pull https://github.com/1940604861/test01.git/ master
+团队有人要拿取我编辑的代码输入这行
+
+15.git clone https://github.com/1940604861/test01.git/
+把整个代码拿过来 包括仓库名 不建议用建议pull调用

@@ -1,0 +1,4 @@
+1： classList. add()   该属性用于在元素中添加，移除及切换 CSS 类
+但你可以使用 add() 和 remove() 方法修改它。
+
+2:document.addEventListener("click", function(){  }方法用于文档添加事件。
