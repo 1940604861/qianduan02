@@ -50,3 +50,15 @@ git merge dev
 
 15.git clone https://github.com/1940604861/test01.git/
 把整个代码拿过来 包括仓库名 不建议用建议pull调用
+
+16.ssh-keygen -t rsa -C "123@qq.com"    邮箱地址随意
+使用ssh提交 生成公钥 私钥
+
+17.git remote add wu https://github.com/1940604861/test01.git/
+17-1 ：提交地址变成git push wu master
+17-2：上面那句可以简写地址名 那是更改的意思
+
+18.git push wu -u master
+18-1:git push
+18-2:上面这种提交代码更简短方便
+
