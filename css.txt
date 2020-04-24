@@ -1,9 +1,13 @@
-1：
-cursor:not-allowed   //是一个红色的圈加一个斜杠，表示禁止的意思
 
-！important  权重
+1.cursor:not-allowed   //是一个红色的圈加一个斜杠，表示禁止的意思
 
-  display: flex;
-    justify-content:space-between;
+2.！important  权重
 
+3.{display: flex;
+    justify-content:space-between;}
 在一个盒子就不用浮动左右 直接帮你浮动左跟右
+
+4.vertical-align   属性设置一个元素的垂直对齐方式。
+
+5.letter-spacing:0.2em;
+字体间距

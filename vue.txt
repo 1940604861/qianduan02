@@ -105,3 +105,12 @@ if(this.msg.trim().length===0)
 27：unshift() 方法可向数组的开头添加一个或更多元素
 var cmt={user_name:"匿名用户",add_time:"Data.now()",content:this.msg.trim()};
 this.msg.unshift(cmt)
+
+28：{pathL:'/home/photosinfo/:id',component:phostoinfo}
+:to="'/home/phonotsinfo'+item.id"
+
+29：作用域插槽要编辑 <template slot-scope="scope"></template>
+
+30：@keyup.enter="addxxx"
+
+31：:class="['dibu',i1===0 ? 'toubu':'']"

@@ -64,3 +64,19 @@ git merge dev
 
 结束教程
 
+
+工作中使用git操作顺序
+1-1：创建分支名字为dev
+1-2:git branch dev
+
+2-1：分支保存提交到github上
+2-2:git add ./
+2-3:git commit -m "完成分支工作
+2-4:git push
+
+3-1：返回主分支 
+3-2:git checkout master
+3-3:主分支跟子分支dev合拼 git merge master
+
+4-1:合拼完分支就提交代码到github上去
+4-2：git push {这里写地址} master
